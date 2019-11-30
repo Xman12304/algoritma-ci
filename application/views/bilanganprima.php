@@ -30,34 +30,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <div class="w3-container w3-content">
 
     <h3>bilangan prima ( range 1 - 50 )</h3>
-    <h5> Hasil = <?php echo implode(",",$hasil);?></h5>
-
-    <?php 
-    //bilangan prima dari internet
-    /*for($i=1 ; $i<=50; $i++){
-        $pembagi = 0;
-
-        for($j=1;$j<=$i;$j++){
-        if($i%$j == 0){
-            $pembagi++;
-        }
-    }
-    
-    if($pembagi <= 2){
-    echo $i.",";           
-    }
-    }*/
-
-    //bilangan prima murni 
-    /*for($i=2;$i<=50;$i++){
-      
-      for($j=2;$j<=50;$j++){
-      if($i%$j == 0){
-        echo $i.", ";
-      }    
-      }
-    }*/
-    ?>        
+    <h5> Hasil = <?php echo implode(",",$hasil);?></h5> 
     <br><br>
 
 </div>
