@@ -45,15 +45,19 @@
 
         public function bilanganprima(){
 
-            for($i=1 ; $i<=50; $i++){
-                if($i/1 == $i && $i/$i == 1){
-                    $hasil = $i."bilangan prima";
-                }else{
-                    $hasil = $i."bukan prima";
+            //bilangan prima murni 
+            for($i=2;$i<=50;$i++){
+            $count = 0;
+                for($j=2;$j<=50;$j++){
+                if($i%$j == 0){
+                    $count++;
+                    }
                 }
+                if($count == 1){
+                    $hasil[] = $i;
+                }           
             }
-
-            $data = array('hasil' => $hasil);
+            $data['hasil'] = $hasil;
             $this->load->view('bilanganprima', $data);
         }
     
